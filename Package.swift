@@ -7,8 +7,14 @@ let package = Package(
     platforms: [
         .macOS(.v10_13), .iOS(.v11), .tvOS(.v11), .watchOS(.v4)
     ],
+    products: [
+        .library(name: "foo", targets: ["foo"]),
+    ],
     dependencies: [
         .package(url: "https://github.com/vapor/vapor", from: "3.0.0"),
+    ],
+    targets: [
+         .target(name: "foo")
     ],
     swiftLanguageVersions: [.v5]
 )
