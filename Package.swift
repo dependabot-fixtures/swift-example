@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ReactiveCocoa",
+    name: "swift-example-vapor3",
     platforms: [
         .macOS(.v10_13), .iOS(.v11), .tvOS(.v11), .watchOS(.v4)
     ],
