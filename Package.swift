@@ -14,7 +14,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/vapor", from: "3.0.0"),
     ],
     targets: [
-         .target(name: "foo")
+         .target(name: "foo", dependencies: ["Vapor"])
     ],
     swiftLanguageVersions: [.v5]
 )
